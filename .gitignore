@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Runtime data / personal data — do not commit
+recordings/
+rag_db/
+todos.json
+
+# Downloaded models (auto-fetched on first run)
+piper_models/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/

@@ -1,0 +1,32 @@
+# Core framework (dev build from git — no PyPI release with needed features yet)
+pipecat-ai @ git+https://github.com/pipecat-ai/pipecat.git@c51a817efa5f1398c57d42560ee81be69c9cb0d8
+
+# Server
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.32
+psutil>=5.9
+
+# STT — whisper.cpp Python bindings
+pywhispercpp>=1.4
+
+# LLM — Apple Silicon MLX
+mlx>=0.31
+mlx-lm>=0.31
+
+# TTS — Piper ONNX
+piper-tts>=1.4
+
+# RAG — vector store + embeddings
+chromadb>=1.5
+sentence-transformers>=5.0
+FlagEmbedding>=1.4
+nltk>=3.9            # sentence tokenisation for RAG chunking
+
+# Document parsing
+pypdf>=6.0          # PDF text extraction
+python-docx>=1.2    # .docx text + table extraction
+
+# Utilities (pulled by pipecat but pinned for clarity)
+numpy>=2.0
+loguru>=0.7
